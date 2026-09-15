@@ -1,16 +1,16 @@
 # 📚 Thiết kế Web (TKW) - UTC
 
 ## 📂 TH1
-* [pizza-form.html](TH1/pizza-form.html)
+* [Xem trang Pizza Form](https://tranquocdung24.github.io/TKW/TH1/pizza-form.html)
 
 ## 📂 TH2
-* [exam_results.html](TH2/exam_results.html)
-* [simple_website.html](TH2/simple_website.html)
+* [Xem trang Exam Results](https://tranquocdung24.github.io/TKW/TH2/exam_results.html)
+* [Xem trang Simple Website](https://tranquocdung24.github.io/TKW/TH2/simple_website.html)
 
 ## 📂 TH3
-* [Ancient Architecture (index.html)](TH3/ancient-architecture/index.html)
-* [Photo Shoot Effect (index.html)](TH3/photo-shoot-effect/index.html)
+* [Xem trang Ancient Architecture](https://tranquocdung24.github.io/TKW/TH3/ancient-architecture/index.html)
+* [Xem trang Photo Shoot Effect](https://tranquocdung24.github.io/TKW/TH3/photo-shoot-effect/index.html)
 
 ## 📂 TH4
-* [Page Title (page-title.html)](TH4/Page-title/page-title.html)
-* [Plan Page (plan-page.html)](TH4/PlanPage/plan-page.html)
+* [Xem trang Page Title](https://tranquocdung24.github.io/TKW/TH4/Page-title/page-title.html)
+* [Xem trang Plan Page](https://tranquocdung24.github.io/TKW/TH4/PlanPage/plan-page.html)
