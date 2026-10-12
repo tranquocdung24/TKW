@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* begin_header */
+header {
+    display: flex;
+    border-bottom: 2px red solid;
+}
+
+.header-left{
+    width: 70%;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+}
+
+.header-left p {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-left p:first-child {
+    padding-left: 20px;
+}
+
+.header-left p:last-child {
+    color: red;
+}
+
+.head-right {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+.search input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search button {
+    border: none;
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* end_header */
+a {
+    color: #aaa;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+}
+.sidebar {
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+.sidebar h2 {
+    color: #e50914;
+    margin-top: 0;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+/* Yêu cầu sinh viên khôi phục Flex/Grid ở đây, hiện tại code làm vỡ nát layout */
+.main-layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+}
+
+.sidebar:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.8);
+    transition: transform 0.5s ease;
+    transform-origin: top center;
+}
+
+.movie-grid {
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.movie-card {
+    background-color: #222;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.movie-card .poster {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.movie-card .info {
+    padding: 15px;
+}
+.movie-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+.movie-card p {
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+}
+
+.movie-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 10px 15px rgba(255, 255, 255, 0.2);
+    transition: transform 1s ease;
+}
+
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 300px;
+    margin: 30px auto;
+    text-align: center;
+    gap: 10px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+button[type="submit"] {
+    width: 120px;
+    display: block;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .header-left {
+        width: 100%;
+        justify-content: center;
+    }
+    .header-left p:first-child {
+        padding-left: 0;
+    }
+    .head-right {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .search {
+        width: 90%;
+        justify-content: center;
+    }
+    .search input {
+        width: 100%;
+    }
+    .main-layout {
+        flex-direction: column; 
+    }
+    .sidebar {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .sidebar li {
+        margin-bottom: 0;
+    }
+
+    .movie-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+

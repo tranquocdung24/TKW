@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+<section>
+    <h1>Chi tiết cá nhân</h1>
+    <form onsubmit="valid(event)">
+        <label for="first-name">Tên: <input type="text" name="first-name" id="first-name" ></label><br>
+        <label for="last-name">Họ: <input type="text" name="last-name" id="last-name" ></label><br>
+        <label>Giới tính
+            <label for="male"><input type="radio" name="gender" id="male" value="nam" >Nam  </label>
+            <label for="female"><input type="radio" name="gender" id="female" value="nu" >Nữ</label>
+        </label><br>
+
+        <label for="email">Địa chỉ Email: <input type="email" name="email" id="email" ></label><br>
+        <label for="confirm-email">Xác nhận địa chỉ Email: 
+            <input type="email" name="confirm-email" id="confirm-email" ></label><br>
+        <label for="birthday">Ngày sinh: 
+            <span id="birthday">
+                <select id="day" name="day" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select id="month" name="month" >
+                    <option value="1">Tháng 1</option>
+                    <option value="2">Tháng 2</option>
+                    <option value="3">Tháng 3</option>
+                    <option value="4">Tháng 4</option>
+                    <option value="5">Tháng 5</option>
+                    <option value="6">Tháng 6</option>
+                    <option value="7">Tháng 7</option>
+                    <option value="8">Tháng 8</option>
+                    <option value="9">Tháng 9</option>
+                    <option value="10">Tháng 10</option>
+                    <option value="11">Tháng 11</option>
+                    <option value="12">Tháng 12</option>
+                </select>
+                <select name="year" id="year" >
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+              </select>
+            </span>
+        </label><br>
+        <label for="country">Quốc gia: <select name="country" id="country" >
+            <option value="VietNam">Việt Nam</option>
+            <option value="US">Mỹ</option>
+        </select></label><br>
+        <label for="location">Địa chỉ: <input type="text" name="location" id="location" ></label><br>
+        <label for="district">Phường/thị xã-quận huyện: <input type="text" name="district" id="district" ></label><br>
+        <label for="city">thành phố/ tỉnh: <input type="text" name="city" id="city" ></label><br>
+        <label for="codeZip">mã Zip: <input type="text" name="codeZip" id="codeZip" ></label><br>
+        <label for="phone-num">Di động: <input type="text" name="phone-num" id="phone-num" ></label><br>
+        <button>Gửi</button>
+    </form>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

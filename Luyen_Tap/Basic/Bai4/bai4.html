@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bai 4</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0 auto;
+      width: 1130px;
+    }
+    nav h2 {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 33px;
+    }
+    nav h2::after {
+      background-color: #339999;
+      content: "";
+      display: block;
+      height: 3px;
+      width: 75px;
+      margin: 11px auto 30px;
+    }
+    nav ul {
+      margin: 0 auto;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: gray;
+    }
+    nav ul li:first-child a{
+      color:#339999;
+    }
+    nav ul li a:hover{
+      color: #339999;
+    }
+    section {
+      margin-top: 40px;
+    }
+    section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;       
+      gap: 30px;       
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>My Portfolio</h2>
+    <ul>
+      <li class="all"><a href="#">All</a></li>
+      <li><a href="#">Web App</a></li>
+      <li><a href="#">UI/UX</a></li>
+      <li><a href="#">graphics Design</a></li>
+      <li><a href="#">Mobile App</a></li>
+      <li><a href="#">Branding</a></li>
+      <li><a href="#">Marketing</a></li>
+    </ul>
+  </nav>
+  <section>
+    <ul>
+      <li><a href="#"><img src="image.png"></a></li>
+      <li><a href="#"><img src="image.png"></a></li>
+      <li><a href="#"><img src="image.png"></a></li>
+      <li><a href="#"><img src="image.png"></a></li>
+      <li><a href="#"><img src="image.png"></a></li>
+      <li><a href="#"><img src="image.png"></a></li>
+    </ul>
+  </section>
+</body>
+</html>

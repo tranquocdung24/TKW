@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinemax - Streaming</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Cinemax Pro">
+    <meta name="description" content="Cinemax Pro-a cinema with severals interesting movie">
+</head>
+<body>
+    <!-- begin header -->
+    <header>
+        <div class="header-left">
+            <p>cinemax</p> 
+            <p>pro</p>
+        </div>
+        <div class="head-right">
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm phim...">
+                <button>Tìm kiếm</button>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <div class="main-layout">
+        <div class="sidebar">
+            <h2>CINEMAX</h2>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Phim mới</a></li>
+                <li><a href="#">Phim chiếu rạp</a></li>
+                <li><a href="#">Phim bộ</a></li>
+                <li><a href="#">Thể loại</a></li>
+            </ul>
+        </div>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <div class="poster" style="background-image: url('./images/movie1.jpg');"></div>
+                <div class="info">
+                    <h3>Avenger: End Game</h3>
+                    <p>Hành động, Viễn tưởng</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster" style="background-image: url('./images/movie2.jpg');"></div>
+                <div class="info">
+                    <h3>Inception</h3>
+                    <p>Hành động, Giật gân</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster" style="background-image: url('./images/movie3.jpg');"></div>
+                <div class="info">
+                    <h3>Interstellar</h3>
+                    <p>Khoa học viễn tưởng</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster" style="background-image: url('./images/movie4.jpg');"></div>
+                <div class="info">
+                    <h3>Spider-Man</h3>
+                    <p>Hành động</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster" style="background-image: url('./images/movie5.jpg');"></div>
+                <div class="info">
+                    <h3>Venom</h3>
+                    <p>Hành động</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster" style="background-image: url('./images/movie6.jpg');"></div>
+                <div class="info">
+                    <h3>Dune</h3>
+                    <p>Khoa học viễn tưởng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- begin form -->
+    <form action="" id="dang-nhap">
+        <h1>ĐĂNG NHẬP</h1>
+        <label for="email">Email: <input type="text" placeholder="Email" id="email"></label>
+        <span id="emailError" ></span>
+        <label for="password">Mật khẩu: <input type="password" placeholder="Mật khẩu" id="password"></label>
+        <span id="passError"></span>
+        <button type="submit">Đăng nhập</button>
+    </form>
+    <!-- end form -->
+    <script src="index.js"></script>
+</body>
+</html>
